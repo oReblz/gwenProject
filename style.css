@@ -1,0 +1,161 @@
+:root{
+  --width-height: 50px;
+  --hallway-height: 25px;
+}
+
+
+  
+  .map {
+    width: 600px;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+    background: white;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+  }
+  
+  .scaleable-wrapper {
+    padding: 20px;
+    resize: both;
+    position: relative;
+    background: #666;
+    height: 400px;
+  }
+
+  
+.map{
+  width: 100%;
+  display: grid;
+  grid-template-columns:50px 50px 40px 10px 25px 25px 25px 25px 20px 30px 50px 50px 38px 12px 12px 25px 25px 12px 12px 38px 50px 12px 12px 120px 12px 40px 40px;
+  grid-template-rows:40px 10px 50px 25px 25px 20px 20px 20px 20px 20px 25px  18px 40px 18px 20px 30px 50px 25px 25px 50px;
+
+}
+.room{
+ height: 100%;
+ width: 100%;
+ border-style: solid;
+ border-color: black;
+ text-align: center;
+ border-width: 1px;
+ transition-duration: .3s;
+ --hover-color: black;
+  display: block;
+}
+
+
+#hall1{
+  grid-column: 5/11;
+  grid-row: 2/3;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-color: black;
+  border-width: 1px;
+  display: block;
+  height: 100%;
+ width: 100%;
+}
+.room:hover{
+  border-color: black;
+  background-color: rgb(29, 29, 29);
+  border-style: solid;
+  --hover-color: white;
+}
+
+.room a{
+  text-decoration: none;
+  color: var(--hover-color);
+
+}
+
+
+#room-30a{
+  grid-column: 5/8;
+  grid-row: 1/2;
+
+}
+#room-30b{
+  grid-column: 8/11;
+  grid-row: 1;
+
+}
+
+#room-21{
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+#room-23{
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#room-25{
+  grid-column: 3/5;
+  grid-row: 3;
+}
+
+#room-22{
+  grid-column: 1/2;
+  grid-row: 5/7;
+}
+
+#room-24{
+  grid-column: 2/3;
+  grid-row: 5/7;
+}
+
+#room-26{
+  grid-column: 3/5;
+  grid-row: 5/7;
+}
+#room-32{
+  grid-column: 5/7;
+  grid-row: 5/8;
+}
+#media-center{
+  grid-column: 5/7;
+  grid-row: 8/14;
+}
+
+
+#room-11{
+  grid-column: 1/2;
+  grid-row: 15/17;
+}
+
+#room-13{
+  grid-column: 2/3;
+  grid-row: 15/17;
+}
+#room-15{
+  grid-column: 3/5;
+  grid-row: 15/17;
+}
+#room-12{
+  grid-column: 1/2;
+  grid-row: 18/20;
+}
+#room-14{
+  grid-column: 2/3;
+  grid-row: 18/20;
+}
+#room-16{
+  grid-column: 3/5;
+  grid-row: 18/20;
+}
+#b-b-1{
+  grid-column: 5/6;
+  grid-row: 16/17;
+}
+#b-g-1{
+  grid-column: 6/7;
+  grid-row: 16/17;
+}
+#unknown1{
+  grid-column: 5/7;
+  grid-row: 14/16;
+}
