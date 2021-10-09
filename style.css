@@ -6,8 +6,8 @@
 
   
   .map {
-    width: 600px;
-    height: 400px;
+    width: 100vh;
+    height: 100%;
     padding: 50px;
     text-align: center;
     background: white;
@@ -32,6 +32,7 @@
   display: grid;
   grid-template-columns:50px 50px 40px 10px 25px 25px 25px 25px 20px 30px 50px 50px 38px 12px 12px 25px 25px 12px 12px 38px 50px 12px 12px 120px 12px 40px 40px;
   grid-template-rows:40px 10px 50px 25px 25px 20px 20px 20px 20px 20px 25px  18px 40px 18px 20px 30px 50px 25px 25px 50px;
+  grid-gap: 1px;
 
 }
 .room{
@@ -120,7 +121,6 @@
   grid-column: 5/7;
   grid-row: 8/14;
 }
-
 
 #room-11{
   grid-column: 1/2;
